@@ -26,10 +26,9 @@ yarn build
 yarn init -y
 ```
 
-2. 我在package.json最上面里添加一个脚本
+2. 我在package.json里添加一个脚本
 
 ```
-{
   "scripts": {
     "build": "rm -rf dist && parcel build src/index.html --no-minify --public-url ./"
   },
