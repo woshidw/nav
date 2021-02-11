@@ -20,7 +20,11 @@ yarn build
 
 ## 如何一键build
 
-1. `yarn init -y`创建一个package.json
+1. 创建一个package.json
+
+```
+yarn init -y
+```
 
 2. 我在package.json最上面里添加一个脚本
 
