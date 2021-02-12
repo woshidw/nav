@@ -3,9 +3,16 @@ const $lastLi = $siteList.find('li.last')
 const x = localStorage.getItem('x')
 const xObject = JSON.parse(x)
 const hashMap = xObject || [
-  {logo: 'A', url: 'https://www.acfun.cn'},
-  {logo: 'B',  url: 'https://www.bilibili.com'}
+  {logo: 'A', url: 'http://www.alloyteam.com/'},
+  {logo: 'B',  url: 'https://www.bilibili.com'},
+  {logo: 'F',  url: 'https://www.figma.com/'},
+  {logo: 'G', url: 'https://github.com/'},
+  {logo: 'I',  url: 'https://www.iconfont.cn/'},
+  {logo: 'J', url: 'https://juejin.cn/'},
+  {logo: 'W', url: 'https://wangdoc.com/javascript/'},
+  {logo: 'Y',  url: 'https://www.yuque.com/'},
 ]
+
 const simplifyUrl = (url) => {
   return url.replace('https://', '')
     .replace('http://', '')
@@ -54,6 +61,8 @@ $('.addButton').on('click', () => {
   render()
 })
 
+
+//存storage
 window.onbeforeunload = () => {
   const string = JSON.stringify(hashMap)
   localStorage.setItem('x', string)

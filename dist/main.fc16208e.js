@@ -124,10 +124,28 @@ var x = localStorage.getItem('x');
 var xObject = JSON.parse(x);
 var hashMap = xObject || [{
   logo: 'A',
-  url: 'https://www.acfun.cn'
+  url: 'http://www.alloyteam.com/'
 }, {
   logo: 'B',
   url: 'https://www.bilibili.com'
+}, {
+  logo: 'F',
+  url: 'https://www.figma.com/'
+}, {
+  logo: 'G',
+  url: 'https://github.com/'
+}, {
+  logo: 'I',
+  url: 'https://www.iconfont.cn/'
+}, {
+  logo: 'J',
+  url: 'https://juejin.cn/'
+}, {
+  logo: 'W',
+  url: 'https://wangdoc.com/javascript/'
+}, {
+  logo: 'Y',
+  url: 'https://www.yuque.com/'
 }];
 
 var simplifyUrl = function simplifyUrl(url) {
@@ -165,7 +183,7 @@ $('.addButton').on('click', function () {
     url: url
   });
   render();
-});
+}); //存storage
 
 window.onbeforeunload = function () {
   var string = JSON.stringify(hashMap);
@@ -183,4 +201,4 @@ $(document).on('keypress', function (e) {
   }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.d53a45b7.js.map
+//# sourceMappingURL=main.fc16208e.js.map
